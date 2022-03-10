@@ -12,5 +12,5 @@ A quick python script that will filter out the demos where you got highlight ree
 ## Example
 
 ```
-python filter.py --players shox" kennyS --stats 4K 5K "1v3 won" --demo_folder "D:\\replays" --copy_demos True
+python filter.py --players shox kennyS --stats 4K 5K "1v3 won" --demo_folder "D:\\replays" --copy_demos True
 ```
