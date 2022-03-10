@@ -7,14 +7,14 @@ import copy
 parser = argparse.ArgumentParser()
 
 parser.add_argument('--players', nargs='*', default=["shox"])
-parser.add_argument('--stats', nargs='*', default=["Name", "4K", "5K", "1v3 won", "1v4 won", "1v5 won", "Knife"])
+parser.add_argument('--stats', nargs='*', default=["4K", "5K", "1v3 won", "1v4 won", "1v5 won", "Knife"])
 parser.add_argument('--demo_folder', default="C:\\Program Files (x86)\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\csgo\\replays")
 parser.add_argument('--copy_demos', default='False', type=str)
 
 args = parser.parse_args()
 
 PLAYERS = args.players
-INTERESTING_STATS = args.stats
+INTERESTING_STATS = ["Name"] + args.stats
 DEMO_FOLDER = args.demo_folder
 
 excel_files = os.listdir()
