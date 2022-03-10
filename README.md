@@ -2,6 +2,11 @@
  
 A quick python script that will filter out the demos where you got highlight reel worthy moments in.
 
+## Dependencies
+
+1. Python 3.6 or higher
+2. `pip install pandas`
+
 ## Instructions
 1. Export your demos to XLSX format via [CSGO Demo Manager](https://github.com/akiver/CSGO-Demos-Manager). Choose to export as multiple files.
 2. Put the script in the same directory as the exported XLSX files.
